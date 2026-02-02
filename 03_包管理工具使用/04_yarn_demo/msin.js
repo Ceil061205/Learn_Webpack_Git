@@ -1,0 +1,1 @@
+// yarn init yarn的操作和npm类似
