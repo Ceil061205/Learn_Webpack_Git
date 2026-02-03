@@ -1,3 +1,4 @@
+# 忽略文件 .gitignore
 # 配置用户名（替换为你的名字/昵称，引号可加可不加，有空格必须加）
 git config --global user.name "Your Name"
 
