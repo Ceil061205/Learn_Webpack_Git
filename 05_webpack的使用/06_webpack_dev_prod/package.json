@@ -1,0 +1,13 @@
+{
+  "name": "05_webpack_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.dev.config.js",
+    "serve": "webpack serve --config ./config/webpack.prod.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
