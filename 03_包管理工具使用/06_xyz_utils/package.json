@@ -1,0 +1,9 @@
+{
+  "name": "xyz_utils_00",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": ["math"],
+  "author": "xyz",
+  "license": "MIT"
+}
