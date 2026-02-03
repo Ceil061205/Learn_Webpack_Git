@@ -1,6 +1,11 @@
 const path = require("path")
 const { plugins } = require("./postcss.config")
+
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+// const { HtmlWebpackPlugin } 
+
 module.exports = {
+  mode: "production",
   // 入口
   entry: './src/index.js',
   output: {
@@ -46,7 +51,7 @@ module.exports = {
         type: "asset",
         parser: {
           dataUrlCondiotion: {
-            maxSize: 60*1024
+            maxSize: 60 * 1024
           }
         },
         geneerator: [
@@ -75,7 +80,23 @@ module.exports = {
       }
     ]
   },
+  // 热模块开启 核心作用：修改代码后，不刷新整个页面，只更新变化的模块
+  devServer: {
+    hot: true,
+    // localhost
+    host: 0.0.0.0,
+    port: 9999,
+    // 默认打开
+    open: true,
+    // 压缩
+    // compress: true
+  },
   plugins: [
-    new VueLoaderPlugin()
+    // new VueLoaderPlugin(),
+    // new CleanWebpackPlugin(),
+    // new HtmlWebpackPlugin(),
+    // new DefinePlugin() {
+    //   BASE_URL: "'./'"
+    // }
   ]
 }

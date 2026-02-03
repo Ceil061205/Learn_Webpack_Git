@@ -1,6 +1,11 @@
 const path = require("path")
 const { plugins } = require("./postcss.config")
+
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const { HtmlWebpackPlugin } 
+
 module.exports = {
+  mode: "production",
   // 入口
   entry: './src/index.js',
   output: {
@@ -76,6 +81,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin(),
+    new DefinePlugin() {
+      BASE_URL: "'./'"
+    }
   ]
 }

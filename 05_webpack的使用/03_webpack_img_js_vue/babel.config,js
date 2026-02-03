@@ -1,0 +1,7 @@
+module.exports ={
+    options: {
+    plugins: [
+      "babel/plugin-transform-arrow-function"
+    ]
+  }
+}
