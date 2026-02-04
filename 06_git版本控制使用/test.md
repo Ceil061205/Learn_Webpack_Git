@@ -251,8 +251,9 @@ git restore .
 git check-ignore -v filename.ext
 
 # 清理工作区的未跟踪文件（如编译产物、临时文件，慎用！删除后无法恢复）
-# 先查看会清理哪些文件（不实际删除）
+# 先查看会清理哪些文件（不实际删除）   
 git clean -n
+11
 
 # 强制删除未跟踪的文件和目录
 git clean -fd
