@@ -227,7 +227,7 @@ git reset --hard commit_id
 git revert commit_id
 
 # 撤销最后一次提交（会打开编辑器填写撤销说明）
-git revert HEAD  
+git revert HEAD
 ```
 
 ### 3. 撤销工作区的修改
