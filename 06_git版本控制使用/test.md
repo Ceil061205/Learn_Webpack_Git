@@ -215,7 +215,7 @@ git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
 # 方式1：git reset（修改本地仓库历史，推送到远程需强制推送，慎用）
 # 回退到指定版本（commit_id 是 git log 中看到的版本哈希值，前6-8位即可）
 # --soft：仅回退仓库，暂存区和工作区不变（可重新提交）
-git reset --soft commit_id
+git reset --soft commit_id  
 
 # --mixed（默认）：回退仓库和暂存区，工作区不变（最常用）
 git reset commit_id
